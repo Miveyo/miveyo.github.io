@@ -1,0 +1,27 @@
+{
+  "source_archive": "miveyo.zip",
+  "source_folder": "miveyo/PUBLISHED",
+  "pages": [
+    "index.html",
+    "dns-browser.html",
+    "biengot.html",
+    "pc-optimizer.html",
+    "quatnum-os.html",
+    "event.html",
+    "downloads.html",
+    "dns-browser-versions.html",
+    "dns-browser-dev.html",
+    "release-notes.html",
+    "support.html",
+    "data-transfer.html",
+    "install-dns-browser.html",
+    "dns-update-service.html",
+    "dns-browser-gallery.html"
+  ],
+  "images": [],
+  "notes": [
+    "Draft export intentionally not merged; published copy used as baseline.",
+    "Legacy downloads carried over from page hrefs.",
+    "Some archived page copy/images may still show Microbridbox branding."
+  ]
+}
