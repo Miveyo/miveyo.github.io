@@ -3,13 +3,12 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DNS Browser | Miveyo</title>
-<meta name="description" content="Learn about DNS Browser, its core features, screenshots and development status.">
+<meta name="description" content="Explore DNS Browser 3.0, its interface, per-site DNS controls, built-in AdBlocker and network monitoring tools.">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="icon" href="assets/images/dns-browser-logo.webp">
 </head>
 <body>
-
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container header-inner">
@@ -17,7 +16,7 @@
       <span class="brand-mark">M</span><span><span class="brand-name">MIVEYO</span><span class="brand-sub">SOFTWARE & PROJECTS</span></span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html" >Home</a>
+      <a href="index.html">Home</a>
       <details><summary>Products ▾</summary><div class="dropdown">
         <a href="dns-browser.html">DNS Browser</a><a href="biengot.html">Biengot</a><a href="pc-optimizer.html">PC Optimizer</a><a href="quatnum-os.html">Quatnum OS</a>
       </div></details>
@@ -37,38 +36,85 @@
 </header>
 
 <main id="main">
-
-<section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Products / DNS Browser</div><div class="eyebrow">Miveyo product</div><h1>DNS Browser</h1><p>A Chromium-based desktop browser project focused on browsing control, custom DNS options, built-in ad and tracker blocking, and power-user features.</p><div class="hero-actions"><a class="btn" href="downloads.html">Download Center →</a><a class="btn secondary" href="dns-browser-dev.html">Development builds</a></div></div></section>
-<section class="section"><div class="container hero-grid">
-  <div><span class="pill soon">Version 3.0 · In development</span><h2 style="margin-top:16px">A fresh rebuild of the browser.</h2><p class="lead">DNS Browser 3.0 is being rebuilt with a refreshed interface and a renewed focus on browser performance and network control. Release availability will be announced when ready.</p><div class="callout">The downloads listed elsewhere on this site are archived DNS Browser 2.x releases. They are not DNS Browser 3.0 installers.</div></div>
-  <div class="hero-art"><img src="assets/images/dns-browser-home.webp" alt="DNS Browser screenshot from the archived website"></div>
+<section class="page-hero"><div class="container">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Products / DNS Browser</div>
+  <div class="eyebrow">Miveyo product</div>
+  <h1>DNS Browser 3.0</h1>
+  <p>A rebuilt Chromium-based desktop browser focused on a refreshed interface, configurable DNS, built-in ad blocking and practical network tools.</p>
+  <div class="hero-actions">
+    <a class="btn" href="#screenshots">Explore the interface ↓</a>
+    <a class="btn secondary" href="dns-browser-dev.html">Development archive</a>
+  </div>
 </div></section>
-<section class="section soft"><div class="container"><div class="section-head"><div><div class="eyebrow">Browser capabilities</div><h2>Designed around control</h2></div><p>Feature highlights from the browser project and its published product material.</p></div>
-<div class="grid three">
-  <article class="card"><div class="card-icon">⌁</div><h3>Custom DNS</h3><p>Choose DNS providers and configure DNS behavior for browsing needs.</p></article>
-  <article class="card"><div class="card-icon">◈</div><h3>Ad & tracker blocking</h3><p>Built-in request blocking to reduce unwanted advertising and tracking requests.</p></article>
-  <article class="card"><div class="card-icon">▤</div><h3>Tab management</h3><p>Vertical tab navigation and a browser interface designed for managing multiple pages.</p></article>
-  <article class="card"><div class="card-icon">⌑</div><h3>Browser data tools</h3><p>Import, export and sync options have appeared across previous browser releases.</p></article>
-  <article class="card"><div class="card-icon">◇</div><h3>Security utilities</h3><p>Security-related tools and a password manager were added during the 2.5 development cycle.</p></article>
-  <article class="card"><div class="card-icon">✧</div><h3>AI assistant</h3><p>The archived product page introduced the MDNS AI chatbot.</p></article>
-</div></div></section>
-<section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">Gallery</div><h2>Browser snapshots</h2></div><p>Images recovered from the published Miveyo Google Sites export. Some screenshots show older DNS Browser 2.x builds.</p></div>
-<div class="screenshot-grid">
-  <div><img src="assets/images/dns-browser-home.webp" alt="DNS Browser homepage preview"><div class="gallery-caption">DNS Browser home screen — archived image</div></div>
-  <div><img src="assets/images/dns-browser-tabs.webp" alt="DNS Browser tab comparison graphic"><div class="gallery-caption">Tab comparison graphic</div></div>
-  <div><img src="assets/images/dns-browser-built.webp" alt="DNS Browser feature banner"><div class="gallery-caption">Browser feature banner</div></div>
-  <div><img src="assets/images/dns-browser-ram-booster.webp" alt="Built-in RAM Booster banner"><div class="gallery-caption">Built-in RAM Booster banner</div></div>
-</div></div></section>
 
+<section class="section"><div class="container hero-grid">
+  <div>
+    <span class="pill soon">Version 3.0 · In development</span>
+    <h2 style="margin-top:16px">A fresh rebuild. A more controlled browsing experience.</h2>
+    <p class="lead">DNS Browser 3.0 is a fresh rebuild of the desktop browser, with a redesigned interface and a stronger focus on network-level controls and everyday usability.</p>
+    <div class="callout">DNS Browser 3.0 is still in development. The downloads listed elsewhere on this website are archived DNS Browser 2.x releases, not 3.0 installers.</div>
+  </div>
+  <div class="hero-art"><img src="assets/images/dns-browser-3-new-tab.png" alt="DNS Browser 3.0 new tab interface"></div>
+</div></section>
+
+<section class="section soft"><div class="container">
+  <div class="section-head"><div><div class="eyebrow">Version 3.0 highlights</div><h2>Built around useful controls</h2></div><p>These highlights correspond to the current development screenshots shown below.</p></div>
+  <div class="grid three">
+    <article class="card"><div class="card-icon">⌕</div><h3>Custom per-site DNS</h3><p>Configure DNS providers for individual domains, alongside global and fallback DNS settings.</p></article>
+    <article class="card"><div class="card-icon">◈</div><h3>Built-in AdBlocker</h3><p>Use the integrated request-blocking engine and review its results with an ad-block testing page.</p></article>
+    <article class="card"><div class="card-icon">⌁</div><h3>Network Monitor</h3><p>Review data usage, a configurable data limit, monthly reset information and transfer-speed details.</p></article>
+    <article class="card"><div class="card-icon">▤</div><h3>Updated new tab</h3><p>A clean start page with search and quick links to frequently used websites.</p></article>
+    <article class="card"><div class="card-icon">⚙</div><h3>Organized settings</h3><p>Centralized settings for account and security, appearance, navigation, applications and advanced options.</p></article>
+    <article class="card"><div class="card-icon">◇</div><h3>Desktop browser rebuild</h3><p>A new development cycle focused on a refreshed desktop experience and practical browser controls.</p></article>
+  </div>
+</div></section>
+
+<section class="section" id="screenshots"><div class="container">
+  <div class="section-head"><div><div class="eyebrow">Actual application screenshots</div><h2>DNS Browser 3.0 interface</h2></div><p>These screenshots are from the DNS Browser 3.0 build and replace the older 2.x visuals previously shown in this section.</p></div>
+  <div class="screenshot-grid">
+    <div class="card">
+      <img src="assets/images/dns-browser-3-new-tab.png" alt="DNS Browser 3.0 new tab page with search and quick links">
+      <h3 style="margin-top:14px">New Tab UI</h3>
+      <p>Updated start page with the DNS Browser logo, web search and quick-access tiles.</p>
+      <div class="gallery-caption">DNS Browser 3.0 · New tab</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/dns-browser-3-per-site-dns.png" alt="DNS Browser 3.0 global and per-site DNS provider settings">
+      <h3 style="margin-top:14px">Per-site DNS provider</h3>
+      <p>Global DNS, fallback DNS and per-site DNS rules are managed from the advanced DNS settings.</p>
+      <div class="gallery-caption">DNS Browser 3.0 · Network controls</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/dns-browser-3-adblocker.png" alt="DNS Browser 3.0 built-in AdBlocker test results">
+      <h3 style="margin-top:14px">Built-in AdBlocker</h3>
+      <p>A view of the browser's built-in ad-blocking capability during an ad-block test.</p>
+      <div class="gallery-caption">DNS Browser 3.0 · Content blocking</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/dns-browser-3-network-monitor.png" alt="DNS Browser 3.0 network monitor with data usage and transfer speeds">
+      <h3 style="margin-top:14px">Network Monitor</h3>
+      <p>Review data usage, set a data limit and inspect monthly usage and transfer-speed information.</p>
+      <div class="gallery-caption">DNS Browser 3.0 · Network monitor</div>
+    </div>
+    <div class="card">
+      <img src="assets/images/dns-browser-3-settings.png" alt="DNS Browser 3.0 settings interface with account and security options">
+      <h3 style="margin-top:14px">Settings UI</h3>
+      <p>Organized settings categories, including account and security, appearance, navigation and advanced options.</p>
+      <div class="gallery-caption">DNS Browser 3.0 · Settings</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section soft"><div class="container">
+  <div class="feature-band"><div><div class="eyebrow" style="color:#d9f4ff">Previous generations</div><h2>Looking for older DNS Browser screenshots?</h2><p>The original gallery contains archived visuals from earlier DNS Browser 2.x releases.</p></div><a class="btn" href="dns-browser-gallery.html">View archived gallery →</a></div>
+</div></section>
 </main>
 
 <footer><div class="container footer-inner">
   <div><div class="footer-brand">MIVEYO</div><div class="footer-small">Software & projects</div><div class="footer-small" style="margin-top:8px">© 2026 Miveyo. All rights reserved.</div></div>
   <div class="footer-links">
     <a href="dns-browser.html">DNS Browser</a><a href="downloads.html">Downloads</a><a href="support.html">Support</a><a href="event.html">News & events</a>
-    
   </div>
 </div></footer>
-
 <script src="assets/js/site.js" defer></script>
 </body></html>
