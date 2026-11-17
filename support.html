@@ -3,88 +3,412 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Support | Miveyo</title>
-        <meta name="description" content="DNS Browser support articles, legacy system requirements and troubleshooting links.">
+        <title>Support Center | Miveyo</title>
+        <meta name="description" content="Search Miveyo DNS Browser help topics, CefSharp crash fixes, DNS and network troubleshooting, updates, and data-transfer guidance.">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="assets/css/site.css">
+        <link rel="stylesheet" href="assets/css/support.css">
         <link rel="icon" href="assets/images/dns-browser-logo.webp">
     </head>
-    <body>
+    <body class="support-page">
         <a class="skip" href="#main">Skip to content</a>
         <header class="site-header">
             <div class="container header-inner">
-                <a class="brand" href="index.html" aria-label="Miveyo home"> <img src="assets/images/logo_notext_small.png" alt=""><span><span class="brand-name">MIVEYO</span><span class="brand-sub">SOFTWARE & PROJECTS</span></span> </a>
+                <a class="brand" href="index.html" aria-label="Miveyo home">
+                    <img src="assets/images/logo_notext_small.png" alt="">
+                    <span><span class="brand-name">MIVEYO</span><span class="brand-sub">SOFTWARE &amp; PROJECTS</span></span>
+                </a>
                 <nav class="nav" aria-label="Primary navigation">
                     <a href="index.html">Home</a>
                     <details>
                         <summary>Products ▾</summary>
                         <div class="dropdown">
-                            <a href="dns-browser.html">DNS Browser</a><a href="pc-optimizer.html">PC Optimizer</a><a href="quatnum-os.html">Quatnum OS</a>
+                            <a href="dns-browser.html">DNS Browser</a>
+                            <a href="pc-optimizer.html">PC Optimizer</a>
+                            <a href="quatnum-os.html">Quatnum OS</a>
                         </div>
                     </details>
                     <details>
                         <summary>Resources ▾</summary>
                         <div class="dropdown">
-                            <a href="downloads.html">Download Center</a><a href="support.html">Support</a><a href="dns-browser-dev.html">DNS Browser Dev</a><a href="release-notes.html">Release notes</a>
+                            <a href="downloads.html">Download Center</a>
+                            <a href="support.html" aria-current="page">Support</a>
+                            <a href="dns-browser-dev.html">DNS Browser Dev</a>
+                            <a href="release-notes.html">Release notes</a>
                         </div>
                     </details>
-                    <a href="event.html">News & events</a>
+                    <a href="event.html">News &amp; events</a>
                     <a class="nav-cta" href="downloads.html">Downloads ↗</a>
                 </nav>
                 <details class="mobile-menu">
                     <summary>Menu ☰</summary>
                     <div class="mobile-links">
-                        <a href="index.html">Home</a><a href="dns-browser.html">DNS Browser</a><a href="pc-optimizer.html">PC Optimizer</a><a href="quatnum-os.html">Quatnum OS</a><a href="downloads.html">Download Center</a><a href="support.html">Support</a><a href="event.html">News & events</a>
+                        <a href="index.html">Home</a>
+                        <a href="dns-browser.html">DNS Browser</a>
+                        <a href="pc-optimizer.html">PC Optimizer</a>
+                        <a href="quatnum-os.html">Quatnum OS</a>
+                        <a href="downloads.html">Download Center</a>
+                        <a href="support.html" aria-current="page">Support</a>
+                        <a href="event.html">News &amp; events</a>
                     </div>
                 </details>
             </div>
         </header>
+
         <main id="main">
-            <section class="page-hero">
-                <div class="container">
-                    <div class="breadcrumb">
-                        <a href="index.html">Home</a> / Resources / Support
+            <section class="page-hero support-hero">
+                <div class="container support-hero-inner">
+                    <div class="breadcrumb"><a href="index.html">Home</a> / Resources / Support</div>
+                    <div class="eyebrow">Miveyo help center</div>
+                    <h1>How can we help?</h1>
+                    <p class="support-intro">Search troubleshooting guides for DNS Browser, CefSharp runtime crashes, blank pages, DNS errors, and connection problems.</p>
+
+                    <div class="support-search-panel">
+                        <form class="support-search-form" id="support-search-form" role="search" autocomplete="off">
+                            <span class="support-search-icon" aria-hidden="true">⌕</span>
+                            <label class="support-visually-hidden" for="support-search-input">Search support articles and known issues</label>
+                            <input id="support-search-input" name="q" type="search" placeholder="Search issues, e.g. CefSharp crash, blank screen, DNS error..." aria-controls="support-results" aria-describedby="support-search-help" spellcheck="false">
+                            <button type="submit">Search</button>
+                        </form>
+                        <div class="support-search-footer">
+                            <span id="support-results-count" role="status" aria-live="polite">Browse all support topics below.</span>
+                            <button class="support-clear" id="support-clear" type="button" hidden>Clear search</button>
+                        </div>
+                        <p id="support-search-help" class="support-search-help">Searches the Miveyo help articles on this page. For wider community reports, you can also search the official CefSharp issue tracker.</p>
+                        <a class="support-community-link" id="support-github-search" href="https://github.com/cefsharp/CefSharp/discussions" target="_blank" rel="noopener noreferrer">Browse CefSharp community discussions ↗</a>
                     </div>
-                    <div class="eyebrow">Help center</div>
-                    <h1>DNS Browser Support</h1>
-                    <p>Help topics and troubleshooting information preserved from the original support page.</p>
+
+                    <div class="support-search-suggestions" aria-label="Popular searches">
+                        <span>Popular:</span>
+                        <button type="button" data-support-query="CefSharp crash">CefSharp crash</button>
+                        <button type="button" data-support-query="DNS error">DNS error</button>
+                        <button type="button" data-support-query="blank screen">Blank screen</button>
+                        <button type="button" data-support-query="connection timeout">Connection timeout</button>
+                    </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="container prose">
-                    <h2>Legacy DNS Browser 2.0 system requirements</h2>
-                    <p>The original support page listed the following minimum requirements for older DNS Browser builds:</p>
-                    <ul>
-                        <li>Operating system: Windows Vista, Windows 7, Windows 8.x or Windows 10. DNS Browser 2.0 also listed Windows 11 support.</li>
-                        <li>RAM: 1 GB.</li>
-                        <li>CPU: 1 GHz dual-core processor.</li>
-                        <li>GPU: A dedicated graphics card is not required.</li>
-                    </ul>
-                    <div class="notice">These are archived requirements from the old DNS Browser support page, not verified requirements for DNS Browser 3.0.</div>
-                    <h2>Transfer browser data</h2>
-                    <p>Learn about transferring browser settings and data from one device to another.</p>
-                    <a class="btn secondary" href="data-transfer.html">Open data transfer guide →</a>
-                    <h2>Fix older versions crashing</h2>
-                    <p>To troubleshoot crashes in DNS Browser 1.0, 1.5 and 2.0 Beta, try installing .NET Framework 4.6.1 if it is not already installed, then restart your computer.</p>
-                    <h2>Change the browser background image</h2>
-                    <p>To change the browser background, open Settings, select the Themes tab, and choose your preferred background image.</p>
-                    <h2>Check for updates</h2>
-                    <p>Open Settings, find the Update tab and select &ldquo;Check for updates&rdquo;.</p>
+
+            <section class="section support-main-section">
+                <div class="container">
+                    <div class="section-head support-section-head">
+                        <div>
+                            <div class="eyebrow">Troubleshooting library</div>
+                            <h2>Browse by topic</h2>
+                            <p>Choose a category or search for a specific error message. Open an article to see the recommended steps.</p>
+                        </div>
+                    </div>
+
+                    <div class="support-topic-grid" id="support-topic-grid">
+                        <a class="support-topic-card" href="#cefsharp-crashes" data-support-topic="cefsharp-crashes">
+                            <span class="support-topic-icon" aria-hidden="true">⚙</span>
+                            <strong>Crashes &amp; startup</strong>
+                            <span>App closes, missing files, runtime errors</span>
+                        </a>
+                        <a class="support-topic-card" href="#display-issues" data-support-topic="display-issues">
+                            <span class="support-topic-icon" aria-hidden="true">▧</span>
+                            <strong>Display &amp; performance</strong>
+                            <span>Blank pages, flickering, slow browsing</span>
+                        </a>
+                        <a class="support-topic-card" href="#network-issues" data-support-topic="network-issues">
+                            <span class="support-topic-icon" aria-hidden="true">◎</span>
+                            <strong>Network &amp; DNS</strong>
+                            <span>DNS errors, timeouts, offline pages</span>
+                        </a>
+                        <a class="support-topic-card" href="#browser-maintenance" data-support-topic="browser-maintenance">
+                            <span class="support-topic-icon" aria-hidden="true">↻</span>
+                            <strong>Updates &amp; data</strong>
+                            <span>Updates, cache, transfer and settings</span>
+                        </a>
+                        <a class="support-topic-card" href="#legacy-support" data-support-topic="legacy-support">
+                            <span class="support-topic-icon" aria-hidden="true">▤</span>
+                            <strong>Older versions</strong>
+                            <span>Archived requirements and older builds</span>
+                        </a>
+                    </div>
+
+                    <div class="support-results-heading" id="support-results">
+                        <div>
+                            <h2>Support articles</h2>
+                            <p>Start with the closest description of what you are experiencing.</p>
+                        </div>
+                    </div>
+
+                    <div class="support-no-results" id="support-no-results" hidden>
+                        <strong>No matching support articles found.</strong>
+                        <p>Try a shorter phrase, search for an error code, or use the CefSharp community search above.</p>
+                    </div>
+
+                    <section class="support-group" id="cefsharp-crashes" data-support-group>
+                        <div class="support-group-heading">
+                            <span class="support-group-number">01</span>
+                            <div><h3>Crashes and startup problems</h3><p>For DNS Browser closing unexpectedly, failing to launch, or showing runtime errors.</p></div>
+                        </div>
+                        <div class="support-article-grid">
+                            <article class="support-article" data-support-item data-search="cefsharp crash startup app closes immediately won't launch startup failure runtime visual c++ redistributable x64 x86 windows event viewer">
+                                <details>
+                                    <summary><span><strong>DNS Browser closes or crashes when I open it</strong><small>Startup crash · Runtime dependency · Windows</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <p>Try these checks in order:</p>
+                                        <ol>
+                                            <li>Restart Windows and open DNS Browser again. Close other copies of the app first.</li>
+                                            <li>Make sure the app was installed or extracted completely. If files are missing, download a fresh copy from the <a href="downloads.html">Miveyo Download Center</a> and reinstall it. Back up any browser data you need before reinstalling.</li>
+                                            <li>If Windows reports a missing C++ runtime or a CefSharp dependency, install the Microsoft Visual C++ Redistributable that matches the app's architecture. For an x64 build, use the official <a href="https://aka.ms/vc14/vc_redist.x64.exe" target="_blank" rel="noopener noreferrer">Microsoft x64 redistributable</a>. Follow the app's release requirements if they specify a different runtime.</li>
+                                            <li>Check Windows Security or your antivirus quarantine for files removed from the official app package. Restore or allow files only when you can verify they came from the genuine Miveyo download.</li>
+                                        </ol>
+                                        <p class="support-caution">Do not download individual DLL files from third-party DLL websites, and do not disable your antivirus to make the browser start.</p>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="cefsharp.core.dll cefsharp.browsersubprocess.exe browsersubprocess libcef.dll missing dll file not found badimageformatexception missing dependency app folder">
+                                <details>
+                                    <summary><span><strong>Missing CefSharp files or “Could not load file or assembly”</strong><small>CefSharp.Core.dll · BrowserSubprocess · libcef.dll</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <p>CefSharp relies on native libraries, resource files, and its browser subprocess. An incomplete copy or installer can prevent the browser engine from starting.</p>
+                                        <ol>
+                                            <li>Reinstall or extract the complete DNS Browser package. Do not copy only the main executable to another folder.</li>
+                                            <li>Keep the application files and their resource folders together. Do not rename or manually replace CefSharp files.</li>
+                                            <li>Confirm that the downloaded build matches your Windows/app architecture (x64 or x86).</li>
+                                            <li>If the error remains, note the exact missing filename and DNS Browser version when reporting the issue.</li>
+                                        </ol>
+                                        <p class="support-note">CefSharp's documentation lists the Visual C++ runtime and the full set of deployed native/resource files as common causes of this error.</p>
+                                        <a class="support-inline-link" href="https://github.com/cefsharp/CefSharp/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener noreferrer">Read the CefSharp deployment FAQ ↗</a>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="random crash renderer crash tab crash gpu process cefsharp chromium graphics hardware acceleration video driver debug.log event viewer faulting module">
+                                <details>
+                                    <summary><span><strong>The browser crashes while browsing or watching video</strong><small>Renderer crash · GPU process · Debug log</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Update your graphics driver from Windows Update or your PC/GPU manufacturer's official support page.</li>
+                                            <li>Close unused tabs and other demanding apps, then test the same page again.</li>
+                                            <li>If DNS Browser provides a hardware-acceleration option, switch it off temporarily and restart the browser to compare. If there is no such setting, do not edit hidden configuration files or add command-line flags yourself.</li>
+                                            <li>Check whether the crash happens on one website or on every website. A single-site crash may be related to that page's video, graphics, or scripts.</li>
+                                        </ol>
+                                        <p>If the app exits completely, open <strong>Event Viewer → Windows Logs → Application</strong> and look for an error at the time of the crash. Record the faulting application/module and exception code. A <code>Debug.log</code> file may also be present in the app folder, depending on the build.</p>
+                                    </div>
+                                </details>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="support-group" id="display-issues" data-support-group>
+                        <div class="support-group-heading">
+                            <span class="support-group-number">02</span>
+                            <div><h3>Blank pages, display and performance</h3><p>For white or black screens, flickering, rendering problems, and slow pages.</p></div>
+                        </div>
+                        <div class="support-article-grid">
+                            <article class="support-article" data-support-item data-search="blank white black screen page not rendering empty page chromium cefsharp gpu acceleration flickering graphics driver">
+                                <details>
+                                    <summary><span><strong>A website opens as a blank, white, or black page</strong><small>Blank screen · Rendering · Graphics driver</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Reload the page, then open a different website. If only one site is affected, the problem may be specific to that website.</li>
+                                            <li>Close and reopen DNS Browser. Check whether the page still appears blank in a new tab.</li>
+                                            <li>Update your graphics driver and restart Windows.</li>
+                                            <li>If a hardware-acceleration setting is available in DNS Browser, test with it disabled. Change one setting at a time so you can tell which change helped.</li>
+                                            <li>If the page still fails, note the website address (remove private query parameters if necessary), the browser version, and whether the issue occurs on other devices.</li>
+                                        </ol>
+                                        <p class="support-note">CefSharp's troubleshooting guide recommends checking graphics-driver issues and testing GPU acceleration when diagnosing rendering problems. The exact setting is controlled by each app.</p>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="slow browser high memory ram cpu tabs video performance freeze lagging chromium resource usage">
+                                <details>
+                                    <summary><span><strong>DNS Browser feels slow, freezes, or uses a lot of memory</strong><small>Performance · High memory · Unresponsive tabs</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Close tabs you are not using, especially pages with video, large web apps, or many animated elements.</li>
+                                            <li>Close and reopen the browser to release resources held by old tabs.</li>
+                                            <li>Check Windows Task Manager to see whether CPU, memory, disk, or network usage is already high before blaming the browser.</li>
+                                            <li>Update DNS Browser and your graphics driver when updates are available.</li>
+                                            <li>If one website causes the slowdown, test it separately and report the page and steps that reproduce the issue.</li>
+                                        </ol>
+                                        <p>Avoid deleting the entire browser profile as a first step. It can remove saved sessions, settings, and other local data.</p>
+                                    </div>
+                                </details>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="support-group" id="network-issues" data-support-group>
+                        <div class="support-group-heading">
+                            <span class="support-group-number">03</span>
+                            <div><h3>Network and DNS problems</h3><p>For pages that cannot connect, DNS lookup failures, timeouts, and certificate warnings.</p></div>
+                        </div>
+                        <div class="support-article-grid">
+                            <article class="support-article" data-support-item data-search="no internet browser offline cannot connect network disconnected wifi ethernet router vpn proxy firewall internet">
+                                <details>
+                                    <summary><span><strong>DNS Browser says there is no internet connection</strong><small>Offline · Network disconnected · VPN or proxy</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Open the same website in another browser or app. If nothing connects, troubleshoot the Windows network or router first.</li>
+                                            <li>Check Wi-Fi or Ethernet connectivity and restart your router only if other devices are also affected.</li>
+                                            <li>If you use a VPN or proxy, check whether it is connected and configured correctly. Temporarily test without it only when you are allowed to do so on that network.</li>
+                                            <li>Check Windows <strong>Settings → Network &amp; internet → Proxy</strong> for an unexpected proxy configuration. Do not change work, school, or managed-network settings without the administrator's instructions.</li>
+                                            <li>Make sure DNS Browser is not being blocked by a firewall rule. Do not turn the firewall off; only review or allow the genuine app when you trust its source.</li>
+                                        </ol>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="err_name_not_resolved dns error dns probe finished nxdomain domain name cannot resolve per site dns custom dns provider dns settings">
+                                <details>
+                                    <summary><span><strong>“ERR_NAME_NOT_RESOLVED” or a DNS lookup error appears</strong><small>DNS failure · Domain not found · Custom DNS</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Check that the website address is spelled correctly and try opening another site.</li>
+                                            <li>If DNS Browser has a custom DNS or per-site DNS setting enabled, temporarily return the affected site to <strong>Auto/Default</strong> and test again.</li>
+                                            <li>Open Command Prompt in Windows and run <code>ipconfig /flushdns</code> to clear the Windows DNS resolver cache. Then restart DNS Browser and retry.</li>
+                                            <li>If the same domain fails on other devices and networks, the domain or its DNS provider may be having an outage.</li>
+                                        </ol>
+                                        <p>Changing DNS providers can affect privacy, filtering, and parental-control policies. Use a provider you trust and change only the setting needed for the test.</p>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="err_connection_timed_out err_connection_reset connection timeout reset refused website unreachable network latency routing server firewall proxy">
+                                <details>
+                                    <summary><span><strong>“ERR_CONNECTION_TIMED_OUT” or “ERR_CONNECTION_RESET”</strong><small>Connection timeout · Connection reset · Site unreachable</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Retry after a minute and test another website. The destination server may be unavailable or overloaded.</li>
+                                            <li>Check whether the same site loads on another device using the same network.</li>
+                                            <li>Review VPN, proxy, DNS, and firewall settings if the error affects many websites. Change one setting at a time and restore the original value if it does not help.</li>
+                                            <li>If the issue occurs only on one network, test a different trusted connection to help identify whether the router or network policy is involved.</li>
+                                        </ol>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="ssl certificate privacy error certificate date invalid ssl protocol error secure connection clock date time https tls certificate warning">
+                                <details>
+                                    <summary><span><strong>“Your connection is not private” or an SSL/certificate error</strong><small>HTTPS · Certificate date · Secure connection</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Check that Windows date, time, and time zone are correct, then sync the system clock.</li>
+                                            <li>Update Windows and DNS Browser, then retry the page.</li>
+                                            <li>If you use a VPN, proxy, or security product that inspects HTTPS traffic, check its configuration or consult its administrator.</li>
+                                            <li>Do not bypass certificate warnings or install certificates from unknown websites. If the warning appears only on one site, the site's certificate may be misconfigured.</li>
+                                        </ol>
+                                    </div>
+                                </details>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="support-group" id="browser-maintenance" data-support-group>
+                        <div class="support-group-heading">
+                            <span class="support-group-number">04</span>
+                            <div><h3>Updates, cache and browser data</h3><p>For keeping the browser current and managing locally stored information.</p></div>
+                        </div>
+                        <div class="support-article-grid">
+                            <article class="support-article" data-support-item data-search="clear cache cookies site data browsing data website stored files login session sign out">
+                                <details>
+                                    <summary><span><strong>A website keeps showing old content or behaves incorrectly</strong><small>Cache · Cookies · Site data</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <ol>
+                                            <li>Reload the page and check whether the issue occurs in another tab.</li>
+                                            <li>Use DNS Browser's browsing-data controls to clear cached images and files for a test.</li>
+                                            <li>Clear cookies or site data only when necessary. This may sign you out of websites and remove site preferences.</li>
+                                        </ol>
+                                        <p>Do not manually delete random folders from the browser's profile or cache directory. Back up important local browser data before performing a reset.</p>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="update browser check for updates updater download install update failed version">
+                                <details>
+                                    <summary><span><strong>How do I check for DNS Browser updates?</strong><small>Update · New version · Release notes</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <p>Open DNS Browser settings and look for the update option. If the installed release provides <strong>Check for updates</strong>, select it and follow the on-screen instructions.</p>
+                                        <p>You can also check the <a href="downloads.html">Download Center</a> and <a href="release-notes.html">Release Notes</a> for published versions and changes. DNS Browser 3.0 availability may differ while it is in development.</p>
+                                    </div>
+                                </details>
+                            </article>
+
+                            <article class="support-article" data-support-item data-search="transfer move browser data another pc computer export import bookmarks settings data transfer profile">
+                                <details>
+                                    <summary><span><strong>How do I transfer browser data to another computer?</strong><small>Data transfer · Backup · Migration</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <p>Use the <a href="data-transfer.html">DNS Browser data-transfer guide</a> for the available transfer instructions. The exact data that can be moved depends on the browser version.</p>
+                                        <p>Before moving or replacing browser data, close DNS Browser and keep a separate backup of the original files. Never upload browser profile folders publicly; they may contain cookies or other private information.</p>
+                                    </div>
+                                </details>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="support-group" id="legacy-support" data-support-group>
+                        <div class="support-group-heading">
+                            <span class="support-group-number">05</span>
+                            <div><h3>Older DNS Browser versions</h3><p>Historical guidance for releases that are no longer the current development target.</p></div>
+                        </div>
+                        <div class="support-article-grid">
+                            <article class="support-article" data-support-item data-search="legacy old version dns browser 1.0 1.5 2.0 beta net framework 4.6.1 system requirements windows vista windows 7 windows 8 windows 10 windows 11 ram cpu gpu">
+                                <details>
+                                    <summary><span><strong>Archived requirements and crash guidance for older releases</strong><small>DNS Browser 1.0 · 1.5 · 2.0 Beta</small></span><span class="support-expand" aria-hidden="true"></span></summary>
+                                    <div class="support-article-body">
+                                        <p>The original support page listed these minimum requirements for older DNS Browser 2.0 builds:</p>
+                                        <ul>
+                                            <li>Operating system: Windows Vista, Windows 7, Windows 8.x, or Windows 10. The original 2.0 notes also mentioned Windows 11.</li>
+                                            <li>RAM: 1 GB.</li>
+                                            <li>CPU: 1 GHz dual-core processor.</li>
+                                            <li>GPU: A dedicated graphics card was not listed as a requirement.</li>
+                                        </ul>
+                                        <p>For DNS Browser 1.0, 1.5, and 2.0 Beta, the original guidance suggested installing .NET Framework 4.6.1 if it was missing, then restarting Windows.</p>
+                                        <p class="support-caution">These are archived historical requirements, not verified requirements or compatibility guarantees for DNS Browser 3.0. Older operating systems and releases may no longer receive support.</p>
+                                    </div>
+                                </details>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="support-contact-panel">
+                        <div>
+                            <div class="eyebrow">Still need help?</div>
+                            <h2>Help us identify the problem</h2>
+                            <p>When reporting an issue, include the DNS Browser version, Windows version, the exact error message, what you were doing, and the steps that reproduce the problem. For a crash, include the approximate time and any relevant Event Viewer details.</p>
+                            <p class="support-private-note">Remove passwords, authentication tokens, private browsing data, and personal information before sharing logs or screenshots.</p>
+                        </div>
+                        <a class="btn secondary" href="release-notes.html">View release notes ↗</a>
+                    </section>
+
+                    <section class="support-sources">
+                        <h2>Technical references</h2>
+                        <p>These upstream resources provide additional CefSharp and Windows runtime information. They are maintained by their respective publishers.</p>
+                        <div class="support-source-links">
+                            <a href="https://github.com/cefsharp/CefSharp/wiki/Trouble-Shooting" target="_blank" rel="noopener noreferrer">CefSharp troubleshooting guide ↗</a>
+                            <a href="https://github.com/cefsharp/CefSharp/wiki/Frequently-Asked-Questions" target="_blank" rel="noopener noreferrer">CefSharp deployment FAQ ↗</a>
+                            <a href="https://github.com/cefsharp/CefSharp/issues" target="_blank" rel="noopener noreferrer">CefSharp issue tracker ↗</a>
+                            <a href="https://github.com/cefsharp/CefSharp/discussions" target="_blank" rel="noopener noreferrer">CefSharp discussions ↗</a>
+                            <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist" target="_blank" rel="noopener noreferrer">Microsoft Visual C++ Redistributable guidance ↗</a>
+                        </div>
+                        <p class="support-disclaimer">CefSharp is an open-source component used by Windows applications. The community links above are not Miveyo-operated support channels. Some fixes depend on the DNS Browser version and the settings exposed by that release.</p>
+                    </section>
                 </div>
             </section>
         </main>
+
         <footer>
             <div class="container footer-inner">
                 <div>
                     <div class="footer-brand">MIVEYO</div>
-                    <div class="footer-small">Software & projects</div>
+                    <div class="footer-small">Software &amp; projects</div>
                     <div class="footer-small" style="margin-top:8px">© 2026 Miveyo. All rights reserved.</div>
                 </div>
                 <div class="footer-links">
-                    <a href="dns-browser.html">DNS Browser</a><a href="downloads.html">Downloads</a><a href="support.html">Support</a><a href="event.html">News & events</a>
+                    <a href="dns-browser.html">DNS Browser</a>
+                    <a href="downloads.html">Downloads</a>
+                    <a href="support.html">Support</a>
+                    <a href="event.html">News &amp; events</a>
                 </div>
             </div>
         </footer>
         <script src="assets/js/site.js" defer></script>
+        <script src="assets/js/support.js" defer></script>
     </body>
 </html>
