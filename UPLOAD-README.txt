@@ -1,25 +1,13 @@
-MIVEYO DNS BROWSER 3.0 SCREENSHOT UPDATE
+MIVEYO WEBSITE PACKAGE — MOBILE RESPONSIVE & PROOFREAD
 
-This package contains:
-- dns-browser.html (updated DNS Browser product page)
-- assets/css/site.css and assets/js/site.js
-- the site's 21 original Miveyo/legacy images
-- five new DNS Browser 3.0 screenshots in assets/images/
+This ZIP contains the complete Miveyo static website, including all published HTML pages, the shared responsive stylesheet, JavaScript, and image assets. The Biengot project page and its image have been removed from this package.
 
-Upload instructions:
-1. Extract this ZIP.
-2. In the Miveyo/miveyo.github.io repository, upload the `assets` folder to the repository root.
-   The folder should become `assets/css`, `assets/js`, and `assets/images`.
-3. Replace the existing root-level `dns-browser.html` with the included updated file.
-   On GitHub, open dns-browser.html, click the pencil/Edit button, replace its contents with the included file, and commit.
-4. Check https://miveyo.github.io/dns-browser.html and press Ctrl+F5.
+DEPLOYMENT
+1. Back up your current GitHub Pages repository.
+2. Extract this ZIP on your computer.
+3. Upload the contents of the extracted folder to the repository root, preserving the folder structure (especially assets/css, assets/js, and assets/images).
+4. Replace existing files when prompted.
+5. Delete biengot.html and assets/images/biengot-product.webp from the repository if they still exist there; GitHub does not delete old files simply because they are absent from an upload.
+6. Commit the changes to the branch used by GitHub Pages.
 
-New screenshot filenames:
-- dns-browser-3-adblocker.png
-- dns-browser-3-network-monitor.png
-- dns-browser-3-new-tab.png
-- dns-browser-3-per-site-dns.png
-- dns-browser-3-settings.png
-
-The existing older gallery page remains available at dns-browser-gallery.html.
-DNS Browser 3.0 is labelled as in development; the site does not advertise a 3.0 installer.
+The existing responsive CSS is retained. Desktop styling remains outside the mobile/tablet overrides. The website's existing download links and embedded video links are preserved.
